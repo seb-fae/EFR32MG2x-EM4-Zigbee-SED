@@ -5,6 +5,7 @@ bool emberAfPluginIdleSleepOkToSleepCallback(uint32_t durationMs)
   WDOGn_Enable(WDOG0, false);
   return true;
 }
+
 bool emberAfPluginEm4EnterCallback(uint32_t* durationMs)
 {
   // Do not go to EM4 mode if duration is not long enough */
