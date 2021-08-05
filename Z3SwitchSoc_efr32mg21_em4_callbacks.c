@@ -7,7 +7,7 @@ bool emberAfPluginIdleSleepOkToSleepCallback(uint32_t durationMs)
 }
 bool emberAfPluginEm4EnterCallback(uint32_t* durationMs)
 {
-  // Do not go to EM4 mode if duration is not sufficient */
+  // Do not go to EM4 mode if duration is not long enough */
   if (*durationMs > 2000)
    return true;
   return false;
